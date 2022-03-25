@@ -1,0 +1,36 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run build-dev\" \"nodemon server\"",
+    "build-dev": "node tools/watch.js",
+    "build": "node tools/build.js",
+    "start": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.27",
+    "react": "^17.0.2",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.2",
+    "chokidar": "^3.5.3",
+    "concurrently": "^7.0.0",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.3",
+    "express-winston": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "redis": "^4.0.4",
+    "winston": "^3.6.0",
+    "winston-daily-rotate-file": "^4.6.1"
+  }
+}
